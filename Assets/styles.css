@@ -105,4 +105,31 @@ p {
     font-weight: lighter;
 }
 
-#random-num, .total-score, .wins, .losses 
+#random-num {
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    font-weight: lighter;
+    font-size: 30px !important;
+}
+
+.total-score {
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    font-weight: lighter;
+    font-size: 30px !important;
+}
+
+.wins {
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    font-weight: lighter;
+    font-size: 28px !important;
+}
+
+.losses {
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    font-weight: lighter;
+    font-size: 28px !important;
+}
+
+.dragon {
+    float: right;
+    display: block;
+}
