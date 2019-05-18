@@ -4,39 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <title>
-        The Crystal Collector
+        Calvin, The Collector
     </title>
 
     <link rel="stylesheet" href="Assets/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="Assets/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Ruslan+Display&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<h1>The Crystal Collector</h1>
+<h1>Calvin, The Collector</h1>
 <div class="row">
     <div class="col-md-12">
         <div class="container">
-            <p>Welcome to The Crystal Collector!</p>
-            <p>You will be given a random number at the beginning of the game.</p>
-            <p>There are 4 crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-            <p>You win the game by matching your total score to a random number, you lose the game if you total score goes above the random number</p>
-            <p>The value of each crystal is hidden from your until you click on it.</p>
-            <p>Each time when the game starts, the game will change the value of each crystal.</p>
+            <p>While wandering through the mountains you stumble across a cave. With your curiosity piqued, you step inside and to your surprise you finds tons of gold, gems, and treasure!</p>
+            <p>Before you you can grab any of it though, a dragon appears from the dark corners of the cave, and speaks to you.</p>
+            <p>"Hello, human. My name is Calvin and I see you have found my treasure. I do not often have visitors, so I won't eat you... yet. My kind enjoy riddles and games. Would you care to play a round or two?"</p>
+            <p>You agree, because, well, it's a dragon and you'd rather not upset him.</p>
+            <p>"Wonderful. My game works like this. I will choose a random number. In front of you are 4 magic gems each with an assigned but unknown numeric value. You must choose your gems until the your number is equal to my number. If you match it, you will win. Go over and you will lose. We can play as many times as you like, but each time the gems will have new numbers."</p>
+            <p>Calvin has already selected his number. Start by clicking on a gem and observe your number as it increase with each click, trying to match Calvin's.</p>
         </div>
     </div>
 </div>
 <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div class="opponent">
-                <h3>Random Number:</h3>
+                <h3>Calvin's Number: </h3>
                 <div id="random-num"></div>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
+            <div id="score-box">
+                <h3>Your Number: </h3>
+                <div class="total-score"></div>
+            </div>
+        </div>
+        <div class="col-md-4">
             <div class="wins-and-losses">
-                <div >Wins:<span class="wins"></span></div>
-                <div >Losses:<span class="losses"></span></div>
+                <div>Wins: <span class="wins"></span></div>
+                <div>Losses: <span class="losses"></span></div>
             </div>
         </div>
     </div>
@@ -51,16 +58,7 @@
         <button type="button" class="btn btn-danger red"><img src="Assets/red.png"></button>
     
 </div>
-<div class="row">
-    <div class="col-md-12">
-        <div id="score-box">
-            <h3>Your Current Total Score</h3>
-            <div class="total-score"></div>
-        </div>
-    </div>
-</div>
-
-
+    
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="Assets/game.js">

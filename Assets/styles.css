@@ -1,57 +1,108 @@
 body {
-    background-color: #00d8f5;
-    background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");
+    background-image: url("cave_gold_by_nenadmaksimovic_darhhgj-fullview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .row {
     max-width: 1000px;
     margin: auto;
+    justify-content: center;
 }
 
 h1 {
-    margin: auto;
+    margin: 30px auto;
     max-width: 800px;
     padding: 30px;
     background-color: #FFD700;
+    border: 13px outset #EAC200;
+    font-family: 'Ruslan Display', cursive; 
+    color: #700000;
 }
 
 .container {
     margin: auto;
     max-width: 800px;
     padding: 15px;
-    background-color: #B0E0E6;
+    background-color: #FFB203;
+    border: 14px ridge #EA8F0A;
 }
 
 .opponent {
-    margin: auto;
-    max-width: 200px;
+    height: 160px;
+    margin: 10px auto;
+    max-width: 250px;
     padding: 15px;
-    background-color: #FF1493;
+    background-color: #FF7F7B;
+    border: 14px ridge #FF493E;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    font-size: 16;
+    text-align: center;
 }
 
 .wins-and-losses {
-    margin: auto;
-    max-width: 200px;
+    height: 160px;
+    margin: 10px auto;
+    max-width: 250px;
     padding: 15px;
-    background-color: #ADFF2F;
+    background-color: #06FF9A;
+    border: 14px ridge #05D17E;
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    font-size: 28px !important;
+    font-weight: lighter;
 }
 .btn.btn-secondary {
     background-color: #7B68EE;
     border-color: #7B68EE;
+    border: 14px outset #6C5CD1;
 }
 
 .btn.btn-secondary:hover {
     background-color: 	#6A5ACD;
-    border-color: 	#6A5ACD;
 }
 
 #score-box {
-    margin: auto;
-    max-width: 800px;
+    height: 160px;
+    max-width: 250px; 
+    margin: 10px auto;
     padding: 15px;
-    background-color: #FFA500;
+    background-color: #05DFFF;
+    border: 14px ridge #04A7BF;
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    font-size: 16;
+    font-weight: lighter;
+    text-align: center;
 }
 
 .col-md-3 {
     margin: auto;
 }
+
+button {
+    margin: 10px;
+}
+
+img {
+    max-width: 170px;
+}
+
+.btn.btn-danger {
+    border: 14px outset #DD1818;
+}
+
+.btn.btn-success {
+    border: 14px outset #009B3D;
+}
+
+.btn.btn-primary {
+    border: 14px outset #0379D1;
+}
+
+p {
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    font-weight: lighter;
+}
+
+#random-num, .total-score, .wins, .losses 
