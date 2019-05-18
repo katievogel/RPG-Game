@@ -2,3 +2,56 @@ body {
     background-color: #00d8f5;
     background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");
 }
+
+.row {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    margin: auto;
+    max-width: 800px;
+    padding: 30px;
+    background-color: #FFD700;
+}
+
+.container {
+    margin: auto;
+    max-width: 800px;
+    padding: 15px;
+    background-color: #B0E0E6;
+}
+
+.opponent {
+    margin: auto;
+    max-width: 200px;
+    padding: 15px;
+    background-color: #FF1493;
+}
+
+.wins-and-losses {
+    margin: auto;
+    max-width: 200px;
+    padding: 15px;
+    background-color: #ADFF2F;
+}
+.btn.btn-secondary {
+    background-color: #7B68EE;
+    border-color: #7B68EE;
+}
+
+.btn.btn-secondary:hover {
+    background-color: 	#6A5ACD;
+    border-color: 	#6A5ACD;
+}
+
+#score-box {
+    margin: auto;
+    max-width: 800px;
+    padding: 15px;
+    background-color: #FFA500;
+}
+
+.col-md-3 {
+    margin: auto;
+}

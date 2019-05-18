@@ -13,21 +13,58 @@
 </head>
 
 <body>
-
-
-
-
-
-
-
-
-
-
+<h1>The Crystal Collector</h1>
+<div class="row">
+    <div class="col-md-12">
+        <div class="container">
+            <p>Welcome to The Crystal Collector!</p>
+            <p>You will be given a random number at the beginning of the game.</p>
+            <p>There are 4 crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to a random number, you lose the game if you total score goes above the random number</p>
+            <p>The value of each crystal is hidden from your until you click on it.</p>
+            <p>Each time when the game starts, the game will change the value of each crystal.</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+        <div class="col-md-6">
+            <div class="opponent">
+                <h3>Random Number:</h3>
+                <div id="random-num"></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="wins-and-losses">
+                <div >Wins:<span class="wins"></span></div>
+                <div >Losses:<span class="losses"></span></div>
+            </div>
+        </div>
+    </div>
+<div class="row">
+    
+        <button type="button" class="btn btn-primary blue"><img src="Assets/blue.png"></button>
+    
+        <button type="button" class="btn btn-secondary purple"><img src="Assets/purple.png"></button>
+    
+        <button type="button" class="btn btn-success green"><img src="Assets/green.png"></button>
+    
+        <button type="button" class="btn btn-danger red"><img src="Assets/red.png"></button>
+    
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="score-box">
+            <h3>Your Current Total Score</h3>
+            <div class="total-score"></div>
+        </div>
+    </div>
+</div>
 
 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="Assets/game.js"></script>
+    <script type="text/javascript" src="Assets/game.js">
+    </script>
 
 </body>
 
