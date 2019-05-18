@@ -15,6 +15,8 @@ newOppNum();
 var wins = 0;
 var losses = 0;
 var playerTotal = 0;
+//code below is so it starts at zero on page load instead of being blank
+$('.total-score').html(playerTotal); 
 
 //TODO: On button/gem click the number assigned should add to       the player's total score. The player can continue to add/       click gems until they match or go over the opponent number.
 
@@ -50,19 +52,29 @@ $('button.red').click(function gemSum() {
 function winsIncr() {
     if (playerTotal === opponentNum) {
         $('.wins').html(++wins);
-        newOppNum();
+        newGame();
     }
 };
-
-
 
 //TODO: Losses: if the player goes over the opponent number         they lose. Each loss must be added to the 'losses'
 function lossesIncr() {
     if (playerTotal > opponentNum) {
         $('.losses').html(++losses);
-        newOppNum();
+        newGame();
     }
 };
 
 //TODO: Need a reset to assign new numbers to the gems for each     new game. Page refresh will not work as that will clear the     wins and losses
-
+function newGame (){
+    blueGem = Math.floor(Math.random() * 12) + 1;
+    purpleGem = Math.floor(Math.random() * 12) + 1;
+    greenGem = Math.floor(Math.random() * 12) + 1;
+    redGem = Math.floor(Math.random() * 12) + 1;
+    playerTotal = 0;
+    $('.total-score').html(playerTotal);
+    opponentNum = Math.floor(Math.random() * 101) + 19;
+    function newOppNum() {
+        $('#random-num').html(opponentNum);
+    }
+    newOppNum();
+}
